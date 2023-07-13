@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_First">
+
+    <FrameLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List One"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment1_RV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="List Two"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment1_RV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>
